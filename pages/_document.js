@@ -9,7 +9,7 @@ export default function Document() {
           name="description"
           content="Maxime Bonhomme - Product-focused FullStack Developer"
         />
-        <meta name="image" content="https://bonhomme.lol/meta-og.png" />
+        <meta name="image" content="https://bonhomme.lol/basketball.png" />
         <meta itemProp="name" content="Bonhomme" />
         <meta
           itemProp="description"
