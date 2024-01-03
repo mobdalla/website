@@ -24,7 +24,7 @@ export const Header = () => {
       alignItems="center"
       justifyContent="space-between"
     >
-      <Image src="/logo.svg" alt="Bonhomme" />
+      <Image src="/basketball.png" alt="Bonhomme" />
       {address ? (
         <Flex alignItems="center" height="24px">
           <ConnectButton
