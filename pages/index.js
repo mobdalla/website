@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Bonhomme - FullStack Developer</title>
+        <title>MUSTAFA - Software Developer</title>
       </Head>
       <Cursor />
 
@@ -26,7 +26,7 @@ export default function Home() {
           <GridItem colSpan={3}>
             <Box>
               <Heading as="h1" size="lg">
-                Maxime Bonhomme
+                MUSTAFA
               </Heading>
               <Text>Product-focused Fullstack Developer</Text>
               <Link
@@ -34,7 +34,7 @@ export default function Home() {
                 opacity={0.5}
                 href="https://etherscan.io/address/0xff5fe6e0d3d48c90a66217dd4a7560a3ed8dacd2"
               >
-                bonhomme.eth
+                mustafa.eth
               </Link>
             </Box>
           </GridItem>
@@ -110,13 +110,13 @@ export default function Home() {
 
           <Experience
             side="Github"
-            title="@maximebonhomme"
-            href="https://github.com/maximebonhomme"
+            title="@mobdalla"
+            href="https://github.com/mobdalla"
             mb={4}
           />
           <Experience
             side="Etherscan"
-            title="bonhomme.eth"
+            title="mustafa.eth"
             href="https://etherscan.io/address/0xff5fe6e0d3d48c90a66217dd4a7560a3ed8dacd2"
             mb={4}
           />
