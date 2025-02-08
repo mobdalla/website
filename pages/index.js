@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Mustafa Muhagr </title>
+        <title>Mustafa Muhagr</title>
       </Head>
       <Cursor />
 
@@ -21,7 +21,7 @@ export default function Home() {
           <GridItem colSpan={3}>
             <Box>
               <Heading as="h1" size="lg">
-                MUSTAFA
+                Mustafa Muhagr
               </Heading>
               <Text>Software Developer</Text>
             </Box>
@@ -52,15 +52,6 @@ export default function Home() {
           <Heading as="h2" size="md" mt={14} mb={10}>
             Side Projects
           </Heading>
- 
-          <Experience
-            href="https://www.instagram.com/dolenn.bzh"
-            image="/dolenn-single.png"
-            side="ongoing"
-            title="Dolenn - Hot Sauce"
-            desc="Making hot sauces with a friend, made in Brittany with local ingredients."
-            stack="Design • Illustration • Packaging • Cooking"
-          />
           <Experience
             href="https://offline.london"
             image="/offline-favicon.png"
