@@ -1,18 +1,15 @@
-import { Box, Flex, Image } from '@chakra-ui/react';
-import { useAccount } from 'wagmi';
-import { ConnectButton, useConnectModal } from '@rainbow-me/rainbowkit';
-import { useState, useEffect } from 'react';
+import { Flex, Image } from "@chakra-ui/react"
+import { ConnectKitButton } from "connectkit"
+import { useEffect, useState } from "react"
 
 export const Header = () => {
-  const { address } = useAccount();
-  const { openConnectModal } = useConnectModal();
-  const [hasMounted, setMounted] = useState(false);
+  const [hasMounted, setMounted] = useState(false)
 
   useEffect(() => {
-    setMounted(true);
-  }, []);
+    setMounted(true)
+  }, [])
 
-  if (!hasMounted) return false;
+  if (!hasMounted) return false
 
   return (
     <Flex
@@ -24,37 +21,9 @@ export const Header = () => {
       alignItems="center"
       justifyContent="space-between"
     >
-      <Image src="/basketball.png" alt="Bonhomme" />
-      {address ? (
-        <Flex alignItems="center" height="24px">
-          <ConnectButton
-            accountStatus="avatar"
-            chainStatus="icon"
-            showBalance={false}
-          />
-        </Flex>
-      ) : (
-        <Box
-          onClick={openConnectModal}
-          height="24px"
-          position="relative"
-          as="button"
-          role="button"
-          textTransform="uppercase"
-          px={3}
-          color="white"
-          borderRadius="lg"
-          bg="blue.500"
-          fontSize="sm"
-          fontWeight="semibold"
-          transition="0.1s"
-          _hover={{ bg: 'blue.700' }}
-        >
-          <Box as="span" position="relative" zIndex={10}>
-            Connect Wallet
-          </Box>
-        </Box>
-      )}
+      <Image src="/logo.svg" alt="Bonhomme" />
+
+      <ConnectKitButton accountStatus="avatar" chainStatus="icon" showBalance={false} />
     </Flex>
-  );
-};
+  )
+}
