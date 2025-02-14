@@ -1,10 +1,21 @@
-import { ChakraProvider } from "@chakra-ui/react"
 import PropTypes from "prop-types"
 import { WagmiConfig, createConfig, mainnet } from "wagmi"
 import { theme } from "../utils/theme"
 import { Header } from "../components/Header"
 import "../styles/globals.css"
 import { ConnectKitProvider, getDefaultConfig } from "connectkit"
+import { ChakraProvider, extendTheme } from "@chakra-ui/react";
+import { mode } from "@chakra-ui/theme-tools";
+
+const theme = extendTheme({
+  styles: {
+    global: (props) => ({
+      body: {
+        bg: mode("white", "gray.800")(props),
+      },
+    }),
+  },
+});
 
 const wagmiConfig = createConfig(
   getDefaultConfig({
