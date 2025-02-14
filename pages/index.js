@@ -53,12 +53,12 @@ export default function Home() {
             Side Projects
           </Heading>
           <Experience
-            href="https://offline.london"
+            //href="https://offline.london"
             image="/offline-favicon.png"
             side="2024"
-            title="Offline Nostalgia"
-            desc="Generative art project around the offline era. Physical mint."
-            stack="Solidity • IYK Chips • fully onchain"
+            title="Debba"
+            desc=" Currency Exchange "
+            stack="JAVA • javascript • Self-hosted"
           />
           <Experience
             image="/tamiko.svg"
