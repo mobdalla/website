@@ -6,13 +6,17 @@ import Cursor from "../components/Cursor"
 import { Avatar } from "../components/Avatar"
 
 export default function Home() {
+  const { colorMode, toggleColorMode } = useColorMode();
   return (
     <>
       <Head>
         <title>Mustafa Muhagr</title>
       </Head>
       <Cursor />
-
+         <Button onClick={toggleColorMode} position="fixed" top="1rem" right="1rem">
+        {colorMode === "light" ? "Dark" : "Light"} Mode
+      </Button>
+      
       <Box py="115px" px={4} maxWidth={500} mx="auto">
         <Grid fluid templateColumns="repeat(4, 1fr)" mb={10} alignItems="center">
           <GridItem colSpan={1}>
