@@ -43,9 +43,9 @@ export default function Home() {
           </Heading>
 
           <Experience
-            href="https://csi.piemonte.it"
+            href="https://intranet.csi.it"
             side="2025 - present"
-            title="Backend Developer – Intership"
+            title="Backend Developer – Csi Piemonte"
             desc="Robot Automation Process"
             stack="Openrpa • openflow •Kubernetes"
           />
