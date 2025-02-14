@@ -55,7 +55,7 @@ export default function Home() {
           <Experience
             //href="https://offline.london"
             image="/offline-favicon.png"
-            side="2024"
+            side="2024 - present"
             title="Debba"
             desc=" Currency Exchange "
             stack="JAVA • javascript • Self-hosted"
