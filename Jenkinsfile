@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        NODE_VERSION = '18.x' // Specify your Node.js version.
+        NODE_VERSION = '18' // Specify your Node.js version.
     }
 
     stages {
@@ -17,7 +17,7 @@ pipeline {
             steps {
                 // Install Node.js
                 script {
-                    def nodeHome = tool name: "NodeJS-${env.NODE_VERSION}", type: 'NodeJSInstallation'
+                    def nodeHome = tool name: "nodejs-${env.NODE_VERSION}", type: 'NodeJSInstallation'
                     env.PATH = "${nodeHome}/bin:${env.PATH}"
                 }
                 // Install project dependencies
