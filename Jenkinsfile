@@ -17,7 +17,7 @@ pipeline {
             steps {
                 // Install Node.js
                 script {
-                    def nodeHome = tool name: "Nodejs-${env.NODE_VERSION}", type: 'NodeJSInstallation'
+                    def nodeHome = tool name: "NodeJS-${env.NODE_VERSION}", type: 'NodeJSInstallation'
                     env.PATH = "${nodeHome}/bin:${env.PATH}"
                 }
                 // Install project dependencies
