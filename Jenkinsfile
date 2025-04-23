@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        NODE_VERSION = '18' // Specifica la versione Node.js
+        NODE_VERSION = '18.18.0' // Specifica la versione Node.js
     }
 
     tools {
