@@ -36,7 +36,7 @@ export default function Home() {
             About
           </Heading>
           <Text>
-            GM, I'm Musty. I enjoy building dynamic, creative products from start to
+            GM, I'm MUSTAFA. I enjoy building dynamic, creative products from start to
             finish. Focused on developing intuitive experiences that constantly grow and
             improve based on user metrics. Always shipping.
           </Text>
@@ -62,23 +62,9 @@ export default function Home() {
             side="ongoing"
             title="Debba"
             desc=" Currency Exchange "
-            stack="JAVA • javascript • Self-hosted"
+            stack="JAVA • javascript "
           />
-          <Experience
-            image="/tamiko.svg"
-            side="Paused"
-            title="Tamiko"
-            desc="Tamiko are non-fungible friends that live completely on-chain. You can hatch, feed, breed and evolve them."
-            stack="Solidity • ERC721 • ERC1155 • Next.js"
-          />
-          <Experience
-            href="https://kineticspectru.ms/"
-            image="/kineticspectrum.png"
-            side="2022"
-            title="Kinetic Spectrums"
-            desc="Generative on-chain NFTs. A collection of dynamic, ever changing artworks."
-            stack="Solidity • ERC721 • Next.js"
-          />
+          
 
           <Heading as="h2" size="md" mt={14} mb={10}>
             Links
